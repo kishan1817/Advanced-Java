@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>divert</servlet-name>
+        <servlet-class>divert</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Google</servlet-name>
+        <servlet-class>Google</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Bing</servlet-name>
+        <servlet-class>Bing</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>divert</servlet-name>
+        <url-pattern>/divert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Google</servlet-name>
+        <url-pattern>/Google</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Bing</servlet-name>
+        <url-pattern>/Bing</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
